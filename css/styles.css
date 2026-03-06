@@ -35,7 +35,7 @@ main {
     max-width: 1000px;
     height: 100vh;
     background:
-		linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+		linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0));
 		position: fixed;
     z-index: -1;
 }
@@ -117,6 +117,18 @@ main {
 .title1{
 	font-family: "Rubik Glitch", system-ui;
 }
+.indexcontainer{
+	text-align: justify;
+	padding-top: 6%;
+	padding-bottom: 12%;
+	padding-left:23% ;
+	padding-right:19% ;
+	border-radius: 12px;
+	background: 
+	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+	width: 815px;
+}
+	
 .textcontainer{
 	text-align: justify;
 	padding: 6%;
@@ -125,6 +137,51 @@ main {
 	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
 	max-width: 815px;
 }
+	
+.event-box{
+    background:
+		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+        url("../img/pergamino.png") 50% 29% / cover no-repeat;
+    border: 1px solid #00ff66;
+    padding:40px;
+    max-width:450px;
+	height:700px;
+    backdrop-filter: blur(10px);
+	border-radius: 12px;
+	transition: 0.3s;
+    background-size: cover;
+	overflow:hidden;
+	align-content:center;
+}
+.event-box2{
+
+}
+.infoblack{
+	padding:10px;
+	height:200px;
+	margin-top:458px;
+	margin-left:-39px;
+	margin-right:-39px;
+	background:
+		linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.95));
+	border-radius: 12px;
+}
+.event-box:hover{
+    transform:scale(1.1);
+    filter: drop-shadow(0 0 6px #00ff66);
+}
+.event-info{
+	
+    font-size:20px;
+
+}
+
+.event-desc{
+    font-size:16px;
+
+}
+
+
 .lineupcontainer{
 	text-align: justify;
 	padding: 6%;
@@ -175,7 +232,6 @@ main {
 	border: 1px solid #00ff66!important;
     color: black;
     font-weight: bold;
-    border: none;
 	display: block;
     margin: 20px auto 0;
 	max-width: 230px;
@@ -250,29 +306,3 @@ main {
     100% { clip-path: inset(80% 0 0 0); transform: translate(-2px,-2px); }
 }
 
-.event-box{
-    background: rgba(0,0,0,0.65);
-    border: 1px solid #00ff66;
-    padding:40px;
-    max-width:700px;
-	height:700px;
-    backdrop-filter: blur(6px);
-	border-radius: 12px;
-}
-
-.event-info{
-    font-size:20px;
-    margin-top:310px;
-}
-
-.event-desc{
-    font-size:16px;
-    opacity:0.8;
-}
-
-.hero-buttons{
-    margin-top:20px;
-    display:flex;
-    gap:15px;
-    justify-content:center;
-}
