@@ -30,7 +30,6 @@ main {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    border: 1px solid #00ff66;
     width: 100%;
     max-width: 1000px;
     height: 100vh;
