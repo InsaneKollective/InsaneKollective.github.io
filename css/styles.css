@@ -1,7 +1,7 @@
 body {
 	color: #00ff66;
     overflow-x: hidden;
-    font-family: 'Syncopate', monospace;
+    font-family: system-ui;
 }
 .video-bg {
     position: fixed;
@@ -25,6 +25,7 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
+	
 }
 .main-bg {
     top: 0;
@@ -59,7 +60,7 @@ main {
 }
 /* Navbar *//*  fondo oscuro con borde neon */
 .navbar {
-    background: rgba(0, 0, 0, 1) !important;
+    background: rgba(0, 0, 0, 0.86) !important;
     border-bottom: 2px solid #00ff66;
 	animation: neonPulse 3s infinite;
 }
@@ -74,13 +75,55 @@ main {
     text-shadow: 0 0 10px #00ff66;
     color: #00ff66 !important;
 }
+/* Tamaño del logo */
+.logo-nav {
+    height: 50px;
+    transition: 0.3s;
+}
+
+.logo-nav:hover {
+    transform: scale(1.1);
+	transition: 0.3s;
+	filter: drop-shadow(0 0 16px #00ff66);
+}
+
+.social-nav{
+    gap:12px;
+	align-content: center;
+}
+
+.social-nav img{
+    width:46px;
+    height:46px;
+    transition:0.3s;
+}
+
+.social-nav img:hover{
+    transform:scale(1.2);
+    filter: drop-shadow(0 0 6px #00ff66);
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.86) !important;
+    border-top: 2px solid #00ff66;
+    color: #00ff66;
+	animation: neonPulse 3s infinite;
+	align-content: center;
+}
+.social-link{
+    text-decoration:none;
+    color:inherit;
+}
+.title1{
+	font-family: "Rubik Glitch", system-ui;
+}
 .textcontainer{
 	text-align: justify;
 	padding: 6%;
 	border-radius: 12px;
 	background: 
 	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
-	max-width: 900px;
+	max-width: 815px;
 }
 .lineupcontainer{
 	text-align: justify;
@@ -114,6 +157,7 @@ main {
     color:inherit;
     display:block;
 }
+
 @media (max-width: 768px) {
 
     .row{
@@ -127,34 +171,17 @@ main {
 }
 /* Botones */
 .btn-insane {
-    background: #00ff66;
+    background: #007D2C ;
     color: black;
     font-weight: bold;
     border: none;
 	display: block;
     margin: 20px auto 0;
-	max-width: 100px;
+	max-width: 270px;
 }
 
 .btn-insane:hover {
-    background: #00cc55;
-}
-/* Tamaño del logo */
-.logo-nav {
-    height: 60px;
-    transition: 0.3s;
-}
-
-.logo-nav:hover {
-    transform: scale(1.1);
-}
-
-
-.footer {
-    background: #000;
-    border-top: 2px solid #00ff66;
-    color: #00ff66;
-	animation: neonPulse 3s infinite;
+    background: #FF0004;
 }
 
 /* Títulos glitch */
@@ -220,4 +247,31 @@ main {
 @keyframes glitchBottom {
     0% { clip-path: inset(60% 0 0 0); transform: translate(2px,2px); }
     100% { clip-path: inset(80% 0 0 0); transform: translate(-2px,-2px); }
+}
+
+.event-box{
+    background: rgba(0,0,0,0.65);
+    border: 1px solid #00ff66;
+    padding:40px;
+    max-width:700px;
+	height:700px;
+    backdrop-filter: blur(6px);
+	border-radius: 12px;
+}
+
+.event-info{
+    font-size:20px;
+    margin-top:310px;
+}
+
+.event-desc{
+    font-size:16px;
+    opacity:0.8;
+}
+
+.hero-buttons{
+    margin-top:20px;
+    display:flex;
+    gap:15px;
+    justify-content:center;
 }

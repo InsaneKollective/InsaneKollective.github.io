@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- TemplateBeginEditable name="doctitle" -->
     <title>Insane Kollective</title>
+    <!-- TemplateEndEditable -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
@@ -13,6 +15,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Rubik+Glitch&family=Syncopate&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 <body class="d-flex flex-column min-vh-100">
 <video autoplay muted loop playsinline class="video-bg">
@@ -31,14 +35,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-<div class="collapse navbar-collapse" align="center" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
 
       <ul class="navbar-nav ms-auto">
 		  <li class="nav-item">
-          <a class="title1 nav-link nav-green" href="exodus.html">EXODUS</a>
-        </li>
-		  <li class="nav-item">
-          <a class="nav-link nav-green" href="contacto.html">Contacto</a>
+          <a class="nav-link nav-green" href="#contact">Contacto</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-green" href="#about">Residentes</a>
@@ -52,38 +53,18 @@
 		  
       </ul>
     </div>
-
   </div>
 </nav>
+	
 <main class="flex-fill">
 	<div class="main-bg"></div>
 <section class="container py-5 text-center">
 <div class="textcontainer">
 
-
-  <div class="event-box">
-
-    <h1 class="glitch-text title1" data-text="EXODUS">EXODUS</h1>
-
-    <p class="event-info">
-      18 de Abril 2026<br>
-      Secrtet Location<br>
-      Bogotá
-    </p>
-
-    <p class="event-desc">
-      Una noche de techno crudo, energía industrial y visuales psicóticos.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="exodus.html" class="btn btn-insane">Tickets</a>
-      <a href="lineup.html" class="btn btn-insane">Line Up</a>
-    </div>
-
-  </div>
+	
 	</div>
 </section>
-	</main>
+</main>
 <footer class="footer text-center"><br>
     <div class="social-nav">
 <a href="https://l.instagram.com/?u=https%3A%2F%2Fchat.whatsapp.com%2FECHYRkpu13O4w79uAZhbXS%3Fmode%3Dgi_t%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn2XcEyRpFPcTlkcYpgSc1_JqEEyRpM7VneY3Pt_gbRhZMSYhm2dcW_d7DAVM_aem__1gAN7DIGV91RteAsfLUbg&e=AT7Fx9cgjnXHgsvd0FBwnTNaKzaCXZKpM7fvhf6Lfh8TQNvyHFLYDpDGwoAlDtPgqURtljzK3jBWIxgxsU1ZSrcxWQSRvvqY_AiBli0rpw" target="_blank" class="social-link">

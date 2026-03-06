@@ -30,3 +30,14 @@ $(document).ready(function(){
     });
 
 });
+function enviarWhatsApp(){
+let nombre = document.getElementById("nombre").value;
+let mensaje = document.getElementById("mensaje").value;
+
+let url = "https://wa.me/573133742291?text="
++ "Hola!%0A"
++ "Soy " + nombre + "%0A"
++ mensaje;
+
+window.open(url, "_blank");
+}
