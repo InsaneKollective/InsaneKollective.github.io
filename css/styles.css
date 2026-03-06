@@ -121,12 +121,12 @@ main {
 	text-align: justify;
 	padding-top: 6%;
 	padding-bottom: 12%;
-	padding-left:23% ;
+	padding-left:22% ;
 	padding-right:19% ;
 	border-radius: 12px;
 	background: 
 	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
-	width: 815px;
+	max-width: 815px;
 }
 	
 .textcontainer{
@@ -214,9 +214,25 @@ main {
     color:inherit;
     display:block;
 }
-
+@media (min-width:769px){
+	.indexcontainer{
+		width: 815px;
+	}
+}
+		
 @media (max-width: 768px) {
-
+	
+	.indexcontainer{
+	text-align: justify;
+	padding-top: 6%;
+	padding-bottom: 22%;
+	padding-left:11% ;
+	padding-right:11% ;
+}
+	}
+	.eventbox{
+	width:410px;	
+	}
     .row{
         justify-content: center;
     }
@@ -224,8 +240,6 @@ main {
     .col-md-4{
         max-width: 300px;
     }
-
-}
 /* Botones */
 .btn-insane {
     background: #000 ;
