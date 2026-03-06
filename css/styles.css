@@ -35,7 +35,7 @@ main {
     max-width: 1000px;
     height: 100vh;
     background:
-		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+		linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
 		position: fixed;
     z-index: -1;
 }
@@ -171,17 +171,18 @@ main {
 }
 /* Botones */
 .btn-insane {
-    background: #007D2C ;
+    background: #000 ;
+	border: 1px solid #00ff66!important;
     color: black;
     font-weight: bold;
     border: none;
 	display: block;
     margin: 20px auto 0;
-	max-width: 270px;
+	max-width: 230px;
 }
 
 .btn-insane:hover {
-    background: #FF0004;
+    background: #FFE600;
 }
 
 /* Títulos glitch */
