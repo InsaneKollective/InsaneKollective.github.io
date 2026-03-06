@@ -35,8 +35,7 @@ main {
     max-width: 1000px;
     height: 100vh;
     background:
-		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-        url("../img/blurred.png") 50% 22% / cover no-repeat;
+		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
 		position: fixed;
     z-index: -1;
 }
