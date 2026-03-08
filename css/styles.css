@@ -1,5 +1,5 @@
 body {
-	color: #00ff66;
+	color: #A0FB2E;
     overflow-x: hidden;
     font-family: system-ui;
 }
@@ -24,8 +24,7 @@ main {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
-    overflow: hidden;
-	
+    overflow: hidden;	
 }
 
 .main-bg {
@@ -69,13 +68,13 @@ main {
 }
 /* Links verdes neon */
 .nav-green {
-    color: #00ff66 !important;
+    color: #A0FB2E !important;
     font-weight: bold;
     margin-left: 20px;
     transition: 0.3s;
 }
 .nav-green:hover {
-    text-shadow: 0 0 10px #00ff66;
+    text-shadow: 0 0 7px #00ff66;
     color: #00ff66 !important;
 }
 /* Tamaño del logo */
@@ -109,7 +108,7 @@ main {
 .footer {
     background: rgba(0, 0, 0, 0.86) !important;
     border-top: 2px solid #00ff66;
-    color: #00ff66;
+    color: #A0FB2E;
 	animation: neonPulse 3s infinite;
 	align-content: center;
 }
@@ -209,7 +208,7 @@ main {
 .card:hover {
     transform: scale(1.07);
     box-shadow: 0 0 20px #00ff66;
-	border-color:#FF0004 !important;
+	border-color:#A0FB2E !important;
 }
 .price{
     font-size:22px;
@@ -267,7 +266,7 @@ main {
 	text-align: center;
     font-size: 3rem;
     text-transform: uppercase;
-    color: #00ff66;
+    color: #A0FB2E;
     animation: baseGlitch 1.5s infinite alternate;
 }
 
