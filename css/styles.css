@@ -147,7 +147,7 @@ main {
     background:
 		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
         url("../img/pergamino.png") 50% 29% / cover no-repeat;
-    border: 1px solid #00ff66;
+    border: 1px solid #A0FB2E;
     padding:40px;
     max-width:450px;
 	height:700px;
@@ -173,7 +173,7 @@ main {
 }
 .event-box:hover{
     transform:scale(1.1);
-    filter: drop-shadow(0 0 6px #00ff66);
+    filter: drop-shadow(0 0 6px #A0FB2E);
 }
 .event-info{
 	
@@ -198,8 +198,8 @@ main {
 /* Cards estilo rave */
 .card {
     background: #0a0a0a;
-    border: 1px solid #00ff66;
-    color: #00ff66;
+    border: 1px solid #A0FB2E;
+    color: #A0FB2E;
 	max-height: 100px;
 	max-width: 250px;
     transition: 0.3s;
@@ -207,7 +207,7 @@ main {
 }
 .card:hover {
     transform: scale(1.07);
-    box-shadow: 0 0 20px #00ff66;
+    box-shadow: 0 0 20px #A0FB2E;
 	border-color:#A0FB2E !important;
 }
 .price{
