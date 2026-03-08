@@ -16,7 +16,7 @@ body {
     position:fixed;
     inset:0;
     background:
-        linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),
+        linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)),
         radial-gradient(circle at center, transparent 30%, black 99%);
     z-index:-1;
 }
@@ -27,6 +27,7 @@ main {
     overflow: hidden;
 	
 }
+
 .main-bg {
     top: 0;
     left: 50%;
@@ -49,7 +50,7 @@ main {
     max-width: 1000px;
     height: 100vh;
     background:
-		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+		linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.12)),
         url("../img/Lineup2.png") 50% 29% / cover no-repeat;
     z-index: -1;
 }
@@ -62,7 +63,9 @@ main {
 .navbar {
     background: rgba(0, 0, 0, 0.86) !important;
     border-bottom: 2px solid #00ff66;
+	font-size: 1.4rem;
 	animation: neonPulse 3s infinite;
+	font-family: "Rubik Wet Paint", system-ui;
 }
 /* Links verdes neon */
 .nav-green {
@@ -116,6 +119,9 @@ main {
 }
 .title1{
 	font-family: "Rubik Glitch", system-ui;
+}
+.title2{
+	font-family: "Rubik Wet Paint", system-ui;
 }
 .indexcontainer{
 	text-align: justify;
