@@ -1,8 +1,9 @@
 @charset "utf-8";
 .contact-form{
+	text-align: justify;
     display:flex;
     flex-direction:column;
-    max-width:400px;
+    width:300px;
     margin:auto;
     gap:10px;
 }
