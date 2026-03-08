@@ -54,9 +54,9 @@ main {
     z-index: -1;
 }
 @keyframes neonPulse {
-    0% { box-shadow: 0 0 5px #00ff66; }
-    50% { box-shadow: 0 0 20px #00ff66; }
-    100% { box-shadow: 0 0 5px #00ff66; }
+    0% { box-shadow: 0 0 5px #A0FB2E; }
+    50% { box-shadow: 0 0 20px #A0FB2E; }
+    100% { box-shadow: 0 0 5px #A0FB2E; }
 }
 /* Navbar *//*  fondo oscuro con borde neon */
 .navbar {
