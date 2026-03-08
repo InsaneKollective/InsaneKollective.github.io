@@ -91,13 +91,14 @@ main {
 
 .social-nav{
     gap:12px;
-	align-content: center;
+	text-align: center;
 }
 
 .social-nav img{
     width:46px;
     height:46px;
     transition:0.3s;
+
 }
 
 .social-nav img:hover{
