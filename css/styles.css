@@ -97,13 +97,14 @@ main {
 .social-nav{
     gap:12px;
 	text-align: center;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .social-nav img{
     width:46px;
     height:46px;
     transition:0.3s;
-
 }
 
 .social-nav img:hover{
@@ -114,6 +115,8 @@ main {
 .social-nav2{
     gap:22px;
 	text-align: center;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .social-nav2 img:hover{
@@ -261,7 +264,6 @@ main {
 
 .event-desc{
     font-size:16px;
-
 }
 
 .lineupcontainer{
@@ -280,7 +282,6 @@ main {
 	max-height: 100px;
 	max-width: 250px;
     transition: 0.3s;
-	
 }
 .card:hover {
     transform: scale(1.07);
