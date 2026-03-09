@@ -30,7 +30,7 @@ main {
     overflow: hidden;	
 }
 
-.main-bg {
+/*.main-bg {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -41,9 +41,9 @@ main {
 		linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0));
 		position: fixed;
     z-index: -1;
-}
+}*/
 
-.lineupex-bg {
+/* lineupex-bg {
     position: fixed;
     top: 0;
     left: 50%;
@@ -56,7 +56,7 @@ main {
 		linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.12)),
         url("../img/Lineup2.png") 50% 29% / cover no-repeat;
     z-index: -1;
-}
+} */
 
 @keyframes neonPulse {
     0% { box-shadow: 0 0 5px #A0FB2E; }
@@ -125,7 +125,6 @@ main {
     width:86px;
     height:86px;
     transition:0.3s;
-
 }
 
 .footer {
@@ -151,14 +150,13 @@ main {
 
 .indexcontainer{
 	text-align: justify;
-	padding-top: 6%;
-	padding-bottom: 12%;
-	padding-left:22% ;
-	padding-right:19% ;
+	padding: 6%;
 	border-radius: 12px;
 	background: 
 	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
 	max-width: 815px;
+	width: 100%;
+	margin: 0 auto;
 }
 	
 .textcontainer{
@@ -168,6 +166,25 @@ main {
 	background: 
 	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
 	max-width: 815px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .indexcontainer{
+        width:650px;
+    }
+	.textcontainer{
+		width:650px;
+	}
+}
+@media (min-width: 1000px){
+	.textcontainer{
+		width:815px;
+	}
+    .indexcontainer{
+        width:815px;
+    }
 }
 .event-kx{
     background:
@@ -204,6 +221,7 @@ main {
     background-size: cover;
 	overflow:hidden;
 	align-content:center;
+	margin:0 auto;
 }
 
 .event-box:hover{
@@ -212,7 +230,9 @@ main {
 }
 
 .event-box2{
-
+    width:100%;
+    display:flex;
+    justify-content:center;
 }
 
 .infoblack{
@@ -232,6 +252,7 @@ main {
 	color: black;
 	font-weight:bold;
 	padding: 1%;
+	padding-left: 2.5%;
 	margin-left:-11px;
 	margin-right:-11px;
 	border-radius: 0px 0px 0px 0px;
@@ -275,25 +296,7 @@ main {
     color:inherit;
     display:block;
 }
-@media (min-width:769px){
-	.indexcontainer{
-		width: 815px;
-	}
-}
-		
-@media (max-width: 768px) {
-	
-	.indexcontainer{
-	text-align: justify;
-	padding-top: 6%;
-	padding-bottom: 22%;
-	padding-left:11% ;
-	padding-right:11% ;
-}
-	}
-	.eventbox{
-	width:410px;	
-	}
+
     .row{
         justify-content: center;
     }
@@ -347,10 +350,12 @@ main {
     z-index: -2;
     animation: glitchBottom 1.2s infinite linear alternate-reverse;
 }
+
 .carrousel{
     max-width:700px;
     margin:auto;
 }
+
 .artist-img{
     width:100%;
     max-width:550px;
