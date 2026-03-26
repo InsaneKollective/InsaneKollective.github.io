@@ -36,8 +36,8 @@ let mensaje = document.getElementById("mensaje").value;
 
 let url = "https://wa.me/573208145943?text="
 + "Hola!%0A"
-+ "Soy " + nombre + "%0A"
++ "Soy " + nombre + "y quiero decirles que %0A"
 + mensaje;
 
-window.open(url, "_blank");
+window.open(url);
 }
