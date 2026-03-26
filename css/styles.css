@@ -82,9 +82,36 @@ main {
 .fullscreen-menu.show li:nth-child(5){transition-delay:.6s;}
 }
 
+#nosotros p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+.video-link {
+    display: inline-block;
+    cursor: pointer;
+}
 
+.video-link video {
+    transition: 0.3s;
+}
 
-
+.video-link:hover video {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 12px #A0FB2E);
+}
+.video-overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #A0FB2E;
+    font-weight: bold;
+    background: rgba(0,0,0,0.6);
+    padding: 6px 12px;
+    border: 1px solid #A0FB2E;
+    font-size: 0.9rem;
+	border-radius: 12px;
+}
 /*.main-bg {
     top: 0;
     left: 50%;
