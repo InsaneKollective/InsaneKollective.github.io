@@ -80,7 +80,7 @@
 	</div><br>
 	
 	
-  <form class="contact-form" onsubmit="enviarWhatsApp(); return false;">
+  <form class="contact-form" id="formContacto">
     
     <label for="nombre">Nombre</label>
     <input type="text" id="nombre" name="nombre" required>
@@ -88,7 +88,7 @@
     <label for="mensaje">Mensaje</label>
     <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-    <button type="submit">Enviar</button>
+    <button type="button" onclick="enviarWhatsApp()">Enviar</button>
 
   </form><br>
 
