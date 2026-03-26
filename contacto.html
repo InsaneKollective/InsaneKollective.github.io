@@ -75,20 +75,17 @@
 
 <a href="https://www.instagram.com/insane_kollective" target="_blank" class="social-link">
 <img src="https://static.wixstatic.com/media/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png" alt="Instagram">
-</a><br><br><br>
+</a><br><br>
 		<p align="center">¿Tienes preguntas? Escribenos desde aqui.</p>
 	</div><br>
 	
-	
-  <form class="contact-form" id="formContacto">
+  <form class="contact-form">
     
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre" required>
+		<input type="text" id="nombre" placeholder="Nombre" required class="form-control mb-1">
+		<input type="text" id="contacto1" placeholder="Número o correo" required class="form-control mb-1">
+		<textarea id="mensaje" placeholder="Mensaje" required class="form-control mb-3"></textarea>
 
-    <label for="mensaje">Mensaje</label>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-    <button type="button" onclick="enviarWhatsApp()">Enviar</button>
+		<button type="button" onclick="enviarWhatsApp()" class="btn">Enviar</button>
 
   </form><br>
 

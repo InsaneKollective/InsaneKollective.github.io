@@ -33,22 +33,25 @@ $(document).ready(function(){
 function enviarWhatsApp(){
 
   let nombre = document.getElementById("nombre").value.trim();
+  let contacto = document.getElementById("contacto1").value.trim();
   let mensaje = document.getElementById("mensaje").value.trim();
 	
-  if(nombre === "" || mensaje === ""){
+  if(nombre === "" || contacto === "" || mensaje === ""){
     alert("Completa todos los campos");
     return;
   }
 
-  let texto = `🔥 INSANE CONTACTO 🔥
-👤 Nombre: ${nombre}
-💬 Mensaje: ${mensaje}`;
+  let texto = `Mensaje desde Insane WEB 
+ Nombre: ${nombre}
+ Contacto: ${contacto}
+ Mensaje: ${mensaje}`;
 
   let url = "https://wa.me/573208145943?text=" + encodeURIComponent(texto);
 
   window.open(url, "_blank");
 
-  // limpia el formulario después de enviar
+  // limpiar campos
   document.getElementById("nombre").value = "";
+  document.getElementById("contacto").value = "";
   document.getElementById("mensaje").value = "";
 }
