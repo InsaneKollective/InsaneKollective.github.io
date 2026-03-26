@@ -52,6 +52,6 @@ function enviarWhatsApp(){
 
   // limpiar campos
   document.getElementById("nombre").value = "";
-  document.getElementById("contacto").value = "";
+  document.getElementById("contacto1").value = "";
   document.getElementById("mensaje").value = "";
 }
