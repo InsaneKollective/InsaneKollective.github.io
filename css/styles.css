@@ -480,6 +480,34 @@ main {
 	border-radius: 10px;
 
 }
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-link {
+    color: #A0FB2E;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #00ff66;
+    text-shadow: 0 0 6px #00ff66;
+}
+@media (max-width:768px){
+  .footer-content{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social{
+    justify-content: center;
+  }
+}
 /* Movimiento del texto principal */
 @keyframes baseGlitch {
     0% { transform: translate(0); }
