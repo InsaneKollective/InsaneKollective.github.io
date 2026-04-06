@@ -1,5 +1,5 @@
 body {
-	color: #A0FB2E;
+	color: #00ff66;
     overflow-x: hidden;
     font-family: system-ui;
 }
@@ -29,6 +29,7 @@ main {
     margin: 0 auto;
     overflow: hidden;	
 }
+
 /* SOLO móvil */
 @media (max-width: 991px){
 
@@ -110,12 +111,13 @@ main {
     z-index: -1;
 } */
 
-@keyframes neonPulse {
-    0% { box-shadow: 0 0 5px #A0FB2E; }
-    50% { box-shadow: 0 0 20px #A0FB2E; }
-    100% { box-shadow: 0 0 5px #A0FB2E; }
-}
 /* Navbar *//*  fondo oscuro con borde neon */
+@keyframes neonPulse {
+    0% { box-shadow: 0 0 5px #00ff66; }
+    50% { box-shadow: 0 0 20px #00ff66; }
+    100% { box-shadow: 0 0 5px #00ff66; }
+}
+
 .navbar {
     background: rgba(0, 0, 0, 0.86) !important;
     border-bottom: 2px solid #00ff66;
@@ -124,17 +126,20 @@ main {
 	font-family: "Do Hyeon", system-ui;
 
 }
+
 /* Links verdes neon */
 .nav-green {
-    color: #A0FB2E !important;
+    color: #00ff66 !important;
     font-weight: bold;
     margin-left: 20px;
     transition: 0.3s;
 }
+
 .nav-green:hover {
     text-shadow: 0 0 7px #00ff66;
     color: #00ff66 !important;
 }
+
 /* Tamaño del logo */
 .logo-nav {
     height: 50px;
@@ -186,7 +191,7 @@ main {
 .footer {
     background: rgba(0, 0, 0, 0.86) !important;
     border-top: 2px solid #00ff66;
-    color: #A0FB2E;
+    color: #00ff66;
 	animation: neonPulse 3s infinite;
 	align-content: center;
 }
@@ -226,7 +231,9 @@ main {
 	max-width: 815px;
 	width: 100%;
 	margin: 0 auto;
-}.lead{
+}
+
+.lead{
 	color: white;
 }
 
@@ -238,6 +245,7 @@ main {
 		width:650px;
 	}
 }
+
 @media (min-width: 1000px){
 	.textcontainer{
 		width:815px;
@@ -246,17 +254,19 @@ main {
         width:815px;
     }
 }
+
 @media (max-width: 768px){
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
       padding: 15px;
   }
 }
+
 .event-kx{
     background:
 		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
         url("../img/kx.png") 50% 29% / cover no-repeat;
-    border: 1px solid #A0FB2E;
+    border: 1px solid #00ff66;
     padding:40px;
     max-width:450px;
 	height:700px;
@@ -270,14 +280,14 @@ main {
 
 .event-kx:hover{
     transform:scale(1.1);
-    filter: drop-shadow(0 0 6px #A0FB2E);
+    filter: drop-shadow(0 0 6px #00ff66);
 }
 	
 .event-box{
     background:
 		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
         url("../img/pergamino.png") 50% 29% / cover no-repeat;
-    border: 1px solid #A0FB2E;
+    border: 1px solid #00ff66;
     padding:40px;
     max-width:450px;
 	height:700px;
@@ -292,7 +302,7 @@ main {
 
 .event-box:hover{
     transform:scale(1.1);
-    filter: drop-shadow(0 0 6px #A0FB2E);
+    filter: drop-shadow(0 0 6px #00ff66);
 }
 
 .event-box2{
@@ -314,7 +324,7 @@ main {
 
 .event-info{
     font-size:21px;
-	background-color:#A0FB2E;
+	background-color:#00ff66;
 	color: black;
 	font-weight:bold;
 	padding: 1%;
@@ -337,23 +347,41 @@ main {
 	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
 	max-width: 900px;
 }
+
 /* Cards estilo rave */
 .card {
     background: #0a0a0a;
-    border: 1px solid #A0FB2E;
-    color: #A0FB2E;
+    border: 1px solid #00ff66;
+    color: #00ff66;
 	max-height: 100px;
     transition: 0.3s;
 }
+
 .card:hover {
     transform: scale(1.07);
-    box-shadow: 0 0 20px #A0FB2E;
+    box-shadow: 0 0 20px #F90408;
 	border-color:#C40609 !important;
 }
+
+.ticket-card2 {
+    background: #0a0a0a;
+    border: 1px solid #F90408;
+    color: #F90408;
+	max-height: 100px;
+    transition: 0.3s;
+}
+
+.ticket-card2:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px #00ff66;
+	border-color:#00ff66 !important;
+}
+
 .price{
     font-size:22px;
     font-weight:bold;
 }
+
 .card-link{
     text-decoration:none;
     color:inherit;
@@ -367,6 +395,7 @@ main {
     .col-md-4{
         max-width: 300px;
     }
+
 /* Botones */
 .btn-insane {
     background: #000 ;
@@ -382,37 +411,6 @@ main {
     background: #FFE600;
 }
 
-/* Títulos glitch */
-.glitch-text {
-    position: relative;
-	text-align: center;
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: #A0FB2E;
-    animation: baseGlitch 1.5s infinite alternate;
-}
-
-.glitch-text::before,
-.glitch-text::after {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-.glitch-text::before {
-    color: #DD0003;
-    z-index: -1;
-    animation: glitchTop 1s infinite linear alternate-reverse;
-}
-
-.glitch-text::after {
-    color: #00AAFF;
-    z-index: -2;
-    animation: glitchBottom 1.2s infinite linear alternate-reverse;
-}
 
 .carrousel{
     max-width:700px;
@@ -424,7 +422,7 @@ main {
     background-color: rgba(0,0,0,0.9);
     border-radius: 50%;
     padding: 25px;
-    box-shadow: 0 0 15px #A0FB2E;
+    box-shadow: 0 0 15px #00ff66;
 }
 
 .artist-img{
@@ -443,6 +441,17 @@ main {
     line-height: 1.6;
 }
 
+#heavy{
+	color: red;
+}
+
+#invite{
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #00ff66;
+}
+
 .video-link {
     display: block;
     position: relative;
@@ -457,18 +466,19 @@ main {
 
 .video-link:hover img {
     transform: scale(1.05);
-    filter: drop-shadow(0 0 12px #A0FB2E);
+    filter: drop-shadow(0 0 12px #00ff66);
 }
+
 .video-overlay-text {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    color: #A0FB2E;
+    color: #00ff66;
     font-weight: bold;
     background: rgba(0,0,0,0.6);
     padding: 6px 12px;
-    border: 1px solid #A0FB2E;
+    border: 1px solid #00ff66;
     font-size: 0.9rem;
 	border-radius: 12px;
 }
@@ -480,6 +490,7 @@ main {
 	border-radius: 10px;
 
 }
+
 .footer-nav {
     display: flex;
     justify-content: center;
@@ -488,7 +499,7 @@ main {
 }
 
 .footer-link {
-    color: #A0FB2E;
+    color: #00ff66;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
@@ -498,6 +509,7 @@ main {
     color: #00ff66;
     text-shadow: 0 0 6px #00ff66;
 }
+
 @media (max-width:768px){
   .footer-content{
     flex-direction: column;
@@ -508,23 +520,106 @@ main {
     justify-content: center;
   }
 }
+
 /* Movimiento del texto principal */
+
+/* Títulos glitch */
+.glitch-text {
+    position: relative;
+	text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #00ff66;
+    animation: baseGlitch 1s infinite alternate;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.glitch-text::before {
+    color: #DD0003;
+    z-index: -1;
+	animation: glitchTop 0.6s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+    color: #FCD811;
+    z-index: -2;
+    animation: glitchBottom 0.7s infinite linear alternate-reverse;
+}
+
 @keyframes baseGlitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-1px, 1px); }
-    40% { transform: translate(1px, -1px); }
-    60% { transform: translate(-1px, 0); }
-    80% { transform: translate(1px, 1px); }
-    100% { transform: translate(0); }
+	0%, 90%, 100% { transform: translateX(0); }
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-2px); }
+    40% { transform: translateX(3px); }
+    60% { transform: translateX(-1px); }
+    80% { transform: translateX(2px); }
+	92% { transform: translateX(-8px); }
+    94% { transform: translateX(6px); }
+    96% { transform: translateX(-4px); }
+    98% { transform: translateX(3px); }
+    100% { transform: translateX(0); }
 }
 
 @keyframes glitchTop {
-    0% { clip-path: inset(0 0 70% 0); transform: translate(-2px,-2px); }
-    100% { clip-path: inset(0 0 50% 0); transform: translate(2px,2px); }
+    0% {
+        clip-path: inset(0 0 60% 0);
+        transform: translateX(-6px);
+    }
+    20% {
+        clip-path: inset(0 0 30% 0);
+        transform: translateX(6px);
+    }
+    40% {
+        clip-path: inset(0 0 70% 0);
+        transform: translateX(-4px);
+    }
+    60% {
+        clip-path: inset(0 0 40% 0);
+        transform: translateX(5px);
+    }
+    80% {
+        clip-path: inset(0 0 65% 0);
+        transform: translateX(-3px);
+    }
+    100% {
+        clip-path: inset(0 0 50% 0);
+        transform: translateX(0);
+    }
 }
 
 @keyframes glitchBottom {
-    0% { clip-path: inset(60% 0 0 0); transform: translate(2px,2px); }
-    100% { clip-path: inset(80% 0 0 0); transform: translate(-2px,-2px); }
+    0% {
+        clip-path: inset(60% 0 0 0);
+        transform: translateX(3px);
+    }
+    20% {
+        clip-path: inset(80% 0 0 0);
+        transform: translateX(-4px);
+    }
+    40% {
+        clip-path: inset(50% 0 0 0);
+        transform: translateX(4px);
+    }
+    60% {
+        clip-path: inset(75% 0 0 0);
+        transform: translateX(-2px);
+    }
+    80% {
+        clip-path: inset(65% 0 0 0);
+        transform: translateX(3px);
+    }
+    100% {
+        clip-path: inset(70% 0 0 0);
+        transform: translateX(0);
+    }
 }
 
