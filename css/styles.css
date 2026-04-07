@@ -234,9 +234,14 @@ main {
 }
 
 .lead{
-	color: white;
+	color: white!important;
+	overflow:hidden;
+    text-decoration:none;
 }
-
+.lead:hover {
+    text-shadow: 0 0 7px white;
+    color: white!important;
+}
 @media (min-width: 768px){
     .indexcontainer{
         width:650px;
@@ -441,8 +446,18 @@ main {
     line-height: 1.6;
 }
 
-#heavy{
-	color: red;
+.heavy{
+    color: red !important;
+    font-weight: bold;
+    transition: 0.3s;
+	overflow:hidden;
+    text-decoration:none;
+	
+}
+
+.heavy:hover {
+    text-shadow: 0 0 7px red;
+    color: red important;
 }
 
 #invite{
