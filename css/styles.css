@@ -279,6 +279,7 @@ main {
     background-size: cover;
 	overflow:hidden;
 	align-content:center;
+	animation: neonPulse 3s infinite;
 }
 
 .infoblackkx{
@@ -331,6 +332,7 @@ main {
     background-size: cover;
 	overflow:hidden;
 	align-content:center;
+	animation: neonPulse 3s infinite;
 }
 
 .event-box:hover{
@@ -402,8 +404,9 @@ main {
 .btn-info1:hover{
 	color: #00ff66;
 }
+
 .btn-buy1:hover{
-		color: red;
+		color: greenyellow;
 
 }
 
