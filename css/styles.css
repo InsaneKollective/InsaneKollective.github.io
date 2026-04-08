@@ -215,8 +215,6 @@ main {
 	font-weight: bold;
 }
 
-
-	
 .textcontainer{
 	text-align: justify;
 	padding: 6%;
@@ -233,10 +231,7 @@ main {
 	overflow:hidden;
     text-decoration:none;
 }
-.lead:hover {
-    text-shadow: 0 0 7px white;
-    color: white!important;
-}
+
 @media (min-width: 768px){
     .indexcontainer{
         width:650px;
@@ -260,6 +255,14 @@ main {
   .carousel-control-next-icon {
       padding: 15px;
   }
+	  .footer-content{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social{
+    justify-content: center;
+  }
 }
 
 .event-kx{
@@ -280,8 +283,8 @@ main {
 
 .infoblackkx{
 	padding:10px;
-	height:120px;
-	margin-top:540px;
+	height:140px;
+	margin-top:520px;
 	margin-left:-39px;
 	margin-right:-39px;
 	background:
@@ -302,6 +305,16 @@ main {
 	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
 	max-width: 815px;
 	margin: 0 auto;
+}
+
+@keyframes neonText {
+    0%   { text-shadow: 0 0 2px #fff, 0 0 5px #fff; }
+    50%  { text-shadow: 0 0 5px #fff, 0 0 15px #fff; }
+    100% { text-shadow: 0 0 2px #fff, 0 0 5px #fff; }
+}
+
+.exolink1{	
+	animation: neonText 2s infinite;
 }
 
 .event-box{
@@ -482,8 +495,8 @@ main {
 
 .artist-img{
     width:100%;
-    max-width:550px;
-    height:650px;
+    max-width:450px;
+    height:550px;
     object-fit:cover;
     margin:auto;
     display:block;
@@ -492,8 +505,11 @@ main {
 }
 
 #nosotros p {
+	font-size: 18px;
     margin-bottom: 18px;
     line-height: 1.6;
+	text-align: justify;
+	
 }
 
 .heavy{
@@ -531,7 +547,7 @@ main {
 
 .video-link:hover img {
     transform: scale(1.05);
-    filter: drop-shadow(0 0 12px #00ff66);
+    filter: drop-shadow(0 0 12px red);
 }
 
 .video-overlay-text {
@@ -600,17 +616,6 @@ main {
     text-shadow: 0 0 6px #00ff66;
 }
 
-@media (max-width:768px){
-  .footer-content{
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-social{
-    justify-content: center;
-  }
-}
-
 /* Movimiento del texto principal */
 
 /* Títulos glitch */
@@ -640,7 +645,7 @@ main {
 }
 
 .glitch-text::after {
-    color: #FCD811;
+    color: #00E257;
     z-index: -2;
     animation: glitchBottom 0.7s infinite linear alternate-reverse;
 }
