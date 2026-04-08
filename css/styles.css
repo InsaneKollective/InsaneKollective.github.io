@@ -481,7 +481,10 @@ main {
 .btn-insane:hover {
     background: #FFE600;
 }
-
+.flag{
+	height: 19px;
+	width: 22px
+}
 
 .carrousel{
     max-width:700px;
