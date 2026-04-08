@@ -278,10 +278,22 @@ main {
 	align-content:center;
 }
 
+.infoblackkx{
+	padding:10px;
+	height:120px;
+	margin-top:540px;
+	margin-left:-39px;
+	margin-right:-39px;
+	background:
+		linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.95));
+	border-radius: 12px;
+}
+
 .event-kx:hover{
     transform:scale(1.1);
     filter: drop-shadow(0 0 6px #00ff66);
 }
+
 .indexcontainer{
 	text-align: justify;
 	padding: 6%;
@@ -289,16 +301,16 @@ main {
 	background: 
 	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
 	max-width: 815px;
-	width: 100%;
 	margin: 0 auto;
-}	
+}
+
 .event-box{
     background:
 		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
         url("../img/pergamino.png") 50% 29% / cover no-repeat;
     border: 1px solid #00ff66;
-    padding:40px;
     max-width:450px;
+	width: 450px;
 	height:700px;
     backdrop-filter: blur(10px);
 	border-radius: 12px;
@@ -306,7 +318,6 @@ main {
     background-size: cover;
 	overflow:hidden;
 	align-content:center;
-	margin:0 auto;
 }
 
 .event-box:hover{
@@ -319,13 +330,13 @@ main {
     display:flex;
     justify-content:center;
 }
+.exolinkindex{
+	display: block;
+}
 
 .infoblack{
-	padding:10px;
-	height:200px;
-	margin-top:495px;
-	margin-left:-39px;
-	margin-right:-39px;
+	height:150px;
+	margin-top:555px;
 	background:
 		linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.95));
 	border-radius: 12px;
@@ -343,7 +354,6 @@ main {
 	margin-top: -33px;
 	border-radius: 0px 0px 0px 0px;
 	text-align: center;
-
 }
 
 .event-desc{
@@ -351,55 +361,36 @@ main {
 	text-align: justify;
 }
 
-.btn-buy{
-	font-size:21px;
-	background-color:black;
-	color: white;
-	font-weight:bold;
-	padding: 1%;
-	margin-left:-11px;
-	border-radius: 0px 0px 0px 0px;
-	border: 1px solid #00ff66;
-}
-
-.btn-buy:hover{
-	background-color: black;
-	color: #00ff66;
-	border: 1px solid #00ff66;
-}
-
-/* Botón secundario */
-.btn-info{
-	font-size:21px;
-	background-color:black;
-	color: white;
-	font-weight:bold;
-	padding: 1%;
-	padding-left: 2.5%;
-	border-radius: 0px 6px 0px 0px;
-	border: 1px solid #00ff66;
-	
-}
-
-.btn-info:hover{
-	background-color: black;
-	color: #00ff66;
-}
-
 .event-buttons{
+	font-size: 20px;
 	display: flex;
-	justify-content: space-between;
-	gap: 10px;
-	
+	justify-content: center;
+	gap: 15px;
+	flex-wrap: wrap; /* para móvil */
 }
 
 .event-buttons a{
-	flex: 1;
-	text-align: center;
 	text-decoration: none;
 	font-weight: bold;
-	border-radius: 6px 6px 6px 0px;
 	transition: 0.3s;
+	color: white;
+}
+.btn-buy1,
+.btn-info1{
+	width: 160px;
+	border: 1px solid #00ff66;
+	border-radius: 8px;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+.btn-info1:hover{
+	color: #00ff66;
+}
+.btn-buy1:hover{
+		color: red;
 
 }
 
@@ -721,4 +712,3 @@ main {
         transform: translateX(0);
     }
 }
-
