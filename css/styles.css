@@ -362,7 +362,7 @@ main {
 }
 
 .event-buttons{
-	font-size: 20px;
+	font-size: 22px;
 	display: flex;
 	justify-content: center;
 	gap: 15px;
