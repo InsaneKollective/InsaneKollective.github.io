@@ -377,9 +377,10 @@ main {
 }
 
 .event-buttons{
-	font-size: 22px;
+	font-size: 20px;
 	display: flex;
 	justify-content: center;
+	text-align: center;
 	gap: 15px;
 	flex-wrap: wrap; /* para móvil */
 }
