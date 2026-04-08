@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	color: #00ff66;
     overflow-x: hidden;
@@ -211,16 +215,7 @@ main {
 	font-weight: bold;
 }
 
-.indexcontainer{
-	text-align: justify;
-	padding: 6%;
-	border-radius: 12px;
-	background: 
-	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
-	max-width: 815px;
-	width: 100%;
-	margin: 0 auto;
-}
+
 	
 .textcontainer{
 	text-align: justify;
@@ -287,7 +282,16 @@ main {
     transform:scale(1.1);
     filter: drop-shadow(0 0 6px #00ff66);
 }
-	
+.indexcontainer{
+	text-align: justify;
+	padding: 6%;
+	border-radius: 12px;
+	background: 
+	linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+	max-width: 815px;
+	width: 100%;
+	margin: 0 auto;
+}	
 .event-box{
     background:
 		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
@@ -336,12 +340,67 @@ main {
 	padding-left: 2.5%;
 	margin-left:-11px;
 	margin-right:-11px;
+	margin-top: -33px;
 	border-radius: 0px 0px 0px 0px;
-	margin-top:-10px;
+	text-align: center;
+
 }
 
 .event-desc{
     font-size:16px;
+	text-align: justify;
+}
+
+.btn-buy{
+	font-size:21px;
+	background-color:black;
+	color: white;
+	font-weight:bold;
+	padding: 1%;
+	margin-left:-11px;
+	border-radius: 0px 0px 0px 0px;
+	border: 1px solid #00ff66;
+}
+
+.btn-buy:hover{
+	background-color: black;
+	color: #00ff66;
+	border: 1px solid #00ff66;
+}
+
+/* Botón secundario */
+.btn-info{
+	font-size:21px;
+	background-color:black;
+	color: white;
+	font-weight:bold;
+	padding: 1%;
+	padding-left: 2.5%;
+	border-radius: 0px 6px 0px 0px;
+	border: 1px solid #00ff66;
+	
+}
+
+.btn-info:hover{
+	background-color: black;
+	color: #00ff66;
+}
+
+.event-buttons{
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	
+}
+
+.event-buttons a{
+	flex: 1;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 6px 6px 6px 0px;
+	transition: 0.3s;
+
 }
 
 .lineupcontainer{
@@ -504,6 +563,31 @@ main {
 	object-fit:cover;
 	border-radius: 10px;
 
+}
+
+.resident-container{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap; /* para que en móvil no se rompa todo */
+
+}
+
+.resident{
+    background:
+		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+        url("../img/") 50% 29% / cover no-repeat;
+    border: 1px solid #00ff66;
+    padding:40px;
+    max-width:300px;
+	height:700px;
+    backdrop-filter: blur(10px);
+	border-radius: 12px;
+	transition: 0.3s;
+    background-size: cover;
+	overflow:hidden;
+	align-content:center;
+	
 }
 
 .footer-nav {
