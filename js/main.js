@@ -55,3 +55,15 @@ function enviarWhatsApp(){
   document.getElementById("contacto1").value = "";
   document.getElementById("mensaje").value = "";
 }
+const promo = document.getElementById("promo-overlay");
+const closeBtn = document.getElementById("closePromo");
+
+// cerrar manual
+closeBtn.addEventListener("click", () => {
+	promo.classList.add("hide");
+});
+
+// cerrar automático (6 segundos)
+setTimeout(() => {
+	promo.classList.add("hide");
+}, 6000);
