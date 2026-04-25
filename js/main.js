@@ -58,12 +58,81 @@ function enviarWhatsApp(){
 const promo = document.getElementById("promo-overlay");
 const closeBtn = document.getElementById("closePromo");
 
-// cerrar manual
-closeBtn.addEventListener("click", () => {
-	promo.classList.add("hide");
-});
+if(closeBtn && promo){
+  closeBtn.addEventListener("click", () => {
+    promo.classList.add("hide");
+  });
 
-// cerrar automático (6 segundos)
-setTimeout(() => {
-	promo.classList.add("hide");
-}, 6000);
+  setTimeout(() => {
+    promo.classList.add("hide");
+  }, 6000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const items = document.querySelectorAll('.gallery-item');
+  const lightbox = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  const video = document.getElementById('lightbox-video');
+  const closeBtn = document.getElementById('closeLightbox');
+
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+
+      const image = item.querySelector('img');
+      const vid = item.querySelector('video');
+
+      // Reset previo
+      img.style.display = 'none';
+      video.style.display = 'none';
+      video.pause();
+      video.currentTime = 0;
+      video.src = "";
+
+      // IMAGEN
+      if(image){
+        img.src = image.src;
+        img.style.display = 'block';
+      }
+
+      // VIDEO
+      if(vid){
+        const source = vid.querySelector('source');
+        video.src = source.src;
+        video.style.display = 'block';
+
+        video.currentTime = 0;
+        video.play();
+      }
+
+      lightbox.classList.add('active');
+    });
+  });
+
+  // CERRAR con botón
+  closeBtn.addEventListener('click', () => {
+    closeLightbox();
+  });
+
+  // CERRAR haciendo click fuera
+  lightbox.addEventListener('click', (e) => {
+    if(e.target === lightbox){
+      closeLightbox();
+    }
+  });
+
+  function closeLightbox(){
+    lightbox.classList.remove('active');
+
+    video.pause();
+    video.currentTime = 0;
+    video.src = "";
+
+    // detener videos del grid (por si alguno quedó sonando)
+    document.querySelectorAll('.gallery video').forEach(v => {
+      v.pause();
+      v.currentTime = 0;
+    });
+  }
+
+});

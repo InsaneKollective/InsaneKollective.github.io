@@ -74,82 +74,50 @@
    <h1 class="glitch-text title1" data-text="Purgatory">Purgatory
    </h1>
 		<br>
-    <p class="lead">Revive nuestro primer evento en <a class="lead" href="https://www.instagram.com/antisistema___/">@antisistema___</a> en el que trajimos desde Francia<span><img class="flag" width="48" height="48" src="https://img.icons8.com/emoji/48/france-emoji.png" alt="france-emoji"/></span> a <span class="title1" align="center"><a class="lead" href="https://www.instagram.com/kxchr_music//">KX CHR</a></span> , quien nos dejó sin poder caminar con su música contundente y creativa.</p>
+    <p class="lead">Revive nuestro primer evento en <a class="lead" href="https://www.instagram.com/antisistema___/">@antisistema___</a> en el que trajimos desde Francia<span><img class="flag" width="48" height="48" src="https://img.icons8.com/emoji/48/france-emoji.png" alt="france-emoji"/></span>, por primera y unica vez a <span class="title1" align="center"><a class="lead" href="https://www.instagram.com/kxchr_music//">KX CHR</a></span>, quien nos dejó sin poder caminar con su música contundente y creativa.</p>
 
         <p class="lead">
           Hard techno melódico con energía industrial, acid y sonidos con influencias del D&B que solo KX pudo usar para hacernos estallar de euforia aquella noche.
-        </p>
+        </p><br>
 	
-	<div id="artistsCarousel" class="carousel slide mt-5" data-bs-ride="false">
+<div class="gallery">
 
-  <div class="carousel-inner">
+  <div class="gallery-item">
+    <img src="img/purgatory.png" alt="">
+  </div>
+
+  <div class="gallery-item">
+    <img src="img/kx3.jpg" alt="">
+  </div>
+
+  <div class="gallery-item video">
+   <video muted playsinline class="artist-img"><br>
+   			 <source src="img/purgatory1.mp4" type="video/mp4"></video>
+  </div>
+  <div class="gallery-item video">
+   <video muted playsinline class="artist-img"><br>
+   			 <source src="img/kx3.mp4" type="video/mp4"></video>
+  </div>
+	  <div class="gallery-item video">
+   <video muted playsinline class="artist-img"><br>
+   			 <source src="img/kx1.mp4" type="video/mp4"></video>
+  </div>
+	  <div class="gallery-item video">
+   <video muted playsinline class="artist-img"><br>
+   			 <source src="img/kx2.mp4" type="video/mp4"></video>
+  </div>
 	
-	  	    <!-- Caratula -->
-    <div class="carousel-item active">
-      <div class="artist-box text-center">
-        <img src="img/purgatory.png" class="artist-img" alt="Flyer"><br>
-      </div>
-    </div> 
-	    <!-- ARTISTA MAIN -->
-	      <div class="carousel-item ">
-      <div class="artist-box text-center">
-		<video autoplay muted controls playsinline class="artist-img"><br>
-   			 <source src="img/purgatory1.mp4" type="video/mp4">
- 		 </video>  
-      </div>
-    </div> 
-	  
-    <div class="carousel-item ">
-      <div class="artist-box text-center">
-		<video autoplay muted controls playsinline class="artist-img"><br>
-   			 <source src="img/kx3.mp4" type="video/mp4">
- 		 </video>  
-      </div>
-    </div>  
-	  
-	   <div class="carousel-item">
-      <div class="artist-box text-center">
-		<video autoplay muted controls playsinline class="artist-img"><br>
-   			 <source src="img/kx1.mp4" type="video/mp4">
- 		 </video>  
-      </div>
-    </div>  
-	 
-	  	 <div class="carousel-item">
-      <div class="artist-box text-center">
-		<video autoplay muted controls playsinline class="artist-img"><br>
-   			 <source src="img/kx2.mp4" type="video/mp4">
- 		 </video>  
-      </div>
-    </div> 
-	  
-    <div class="carousel-item">
-      <div class="artist-box text-center">
-        <img src="img/kx3.jpg" class="artist-img" alt="KX CHR"><br>
-      </div>
-    </div>
-	  
-	    <div class="carousel-item">
-      <div class="artist-box text-center">
-        <img src="img/kx4.jpg" class="artist-img" alt="KX CHR"><br>
-      </div>
-    </div>
-	  
-	  
-  <!-- BOTON ANTERIOR -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#artistsCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-
-  <!-- BOTON SIGUIENTE -->
-  <button class="carousel-control-next" type="button" data-bs-target="#artistsCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-<br>
-		</div>
-		 
+	  <div class="gallery-item">
+    <img src="img/kx4.jpg" alt="">
+  </div>
+	
+	  <div class="gallery-item">
+    <img src="img/kx5.jpg" alt="">
+  </div>
+	
+</div>
 	</div>
-	</div>
+	
 </section>
 	</main>
 <footer class="footer text-center mt-auto">
@@ -180,7 +148,11 @@
 
   </div>
 </footer>
-
+<div id="lightbox">
+  <span id="closeLightbox">✕</span>
+  <img id="lightbox-img" alt="close">
+  <video id="lightbox-video" controls></video>
+</div>
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
